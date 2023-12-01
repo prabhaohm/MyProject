@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="85.160303">
+<testcase classname="Validate the forgotten password functionality" name="Validate the forgotten with invalid email" time="11.464258">
+<system-out><![CDATA[When User should click the Signin...........................................passed
+And User should input the invalid email in the text box.....................passed
+And User should click the forgot link.......................................passed
+And User should input invalid email in the recover text box.................passed
+Then User should click the recover buton....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate the Free Instant Freight Quotes Functionality" name="Validate the user to get free freight quotes" time="8.4134">
+<system-out><![CDATA[When User should click the free instant freight quotes......................passed
+And User should give input in the height text box...........................passed
+And User should give input in the lbs text box..............................passed
+And User should give input of pickup postal code in the text box............passed
+And User should click the pickup resdidental area check box.................passed
+And User should give input of delivery postal code in the text box..........passed
+And User should click the delivery residental area check box................passed
+And User should click the Quote button......................................passed
+Then User should navigate to the quick register page........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate the search box functionality" name="Validate the search box while user accesing" time="14.927367">
+<system-out><![CDATA[When User should click the search here button...............................passed
+And User should input text in the search text box...........................passed
+And User should click the search image button...............................passed
+And User should click the shipping hazardous material.......................passed
+Then User should navigate to the hazard page................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate the login Functionality of Freightcenter Page" name="Validate the login with valid invalidusername and invalid password" time="14.094675">
+<system-out><![CDATA[When User should click the signin...........................................passed
+And User should print the title of the page.................................passed
+And User should input invalid username in the textbox.......................passed
+And User should input invalid password in the textbox.......................passed
+And User should click the login button......................................passed
+Then User should check the credential page..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate the login Functionality of Freightcenter Page" name="Validate the login with validusername and invalid password" time="12.228201">
+<system-out><![CDATA[When User should click the signin...........................................passed
+And User should print the title of the page.................................passed
+And User should input valid username and invalid passworD in the textbox....passed
+And User should click the login button......................................passed
+Then User should check the credential page..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate the login Functionality of Freightcenter Page" name="Valid the login with invalid username and valid password" time="13.013959">
+<system-out><![CDATA[When User should click the signin...........................................passed
+And User should print the title of the page.................................passed
+And User should input valid invalidusername"Apple@hotmail.com" and valid password"Colours" in the textbox.passed
+And User should click the login button......................................passed
+Then User should check the credential page..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate the Track functionality" name="Validate the Tracking functionality while usung user" time="11.018443">
+<failure message="java.lang.AssertionError: Check the page&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.stepdefinition.TrackStepDefinition.userShouldNavigateToTheResultPage(TrackStepDefinition.java:51)&#13;&#10;&#9;at ✽.User should navigate to the result page(file:src/test/resources/FeatureFiles/Track.feature:9)&#13;&#10;"><![CDATA[When User should click the Track in the upper menu..........................passed
+And Uesr should input their id in the Track text box........................passed
+And User should click the Track button......................................passed
+Then User should navigate to the result page................................failed
+
+StackTrace:
+java.lang.AssertionError: Check the page
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.stepdefinition.TrackStepDefinition.userShouldNavigateToTheResultPage(TrackStepDefinition.java:51)
+	at ✽.User should navigate to the result page(file:src/test/resources/FeatureFiles/Track.feature:9)
+]]></failure>
+</testcase>
+</testsuite>
